@@ -1,0 +1,14 @@
+
+*.class
+
+*.dex
+
+*.apk
+
+*.ap_
+
+
+
+gen/com/example/verticalhorizontallistview/R.java
+
+bin/verticalhorizontallistview.jar
