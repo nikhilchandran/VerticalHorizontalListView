@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    
+      <RelativeLayout
+        android:id="@+id/gallery_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/left_arrow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/left_arrow_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="2dp"
+                 android:layout_marginTop="40dp"
+                android:src="@drawable/left_scroll_arrow"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_arrow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/right_arrow_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:paddingRight="2dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/right_scroll_arrow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/listLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/right_arrow_layout"
+            android:layout_toRightOf="@+id/left_arrow_layout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/titlelayout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                 android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mylife_titles"
+                     android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Room Name"
+                    android:textColor="#006633"
+                    android:paddingLeft="2dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/mylife_titles_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:gravity="center"
+                    android:paddingRight="2dp"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"                
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.example.twoway.TwoWayView
+        android:id="@+id/mTwoWayView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_below="@+id/titlelayout"
+        android:orientation="horizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    
+    
+
+</LinearLayout>
